@@ -1,5 +1,7 @@
 {
     "name": "adduc/domain-tracker",
+    "description": "Domain tracker, inspired by LET member alex's project",
+    "license": "MIT",
     "authors": [
         {
             "name": "John Long",
