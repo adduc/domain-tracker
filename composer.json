@@ -1,0 +1,21 @@
+{
+    "name": "adduc/domain-tracker",
+    "authors": [
+        {
+            "name": "John Long",
+            "email": "a@88k.us"
+        }
+    ],
+    "require": {
+        "sclinternet/scl-whois": "dev-master",
+        "jamesmoss/toml": "0.1.0",
+        "ircmaxell/password-compat": "1.0.3"
+    },
+    "autoload": {
+        "files": [ "src/bootstrap.php" ],
+        "psr-0": {
+	    "": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}

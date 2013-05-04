@@ -1,0 +1,149 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "7646b1e4901f85e520f8593299bde7cb",
+    "packages": [
+        {
+            "name": "ircmaxell/password-compat",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ircmaxell/password_compat.git",
+                "reference": "v1.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/v1.0.3",
+                "reference": "v1.0.3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/password.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Ferrara",
+                    "email": "ircmaxell@php.net",
+                    "homepage": "http://blog.ircmaxell.com"
+                }
+            ],
+            "description": "A compatibility library for the proposed simplified password hashing algorithm: https://wiki.php.net/rfc/password_hash",
+            "homepage": "https://github.com/ircmaxell/password_compat",
+            "keywords": [
+                "hashing",
+                "password"
+            ],
+            "time": "2013-04-30 19:58:08"
+        },
+        {
+            "name": "sclinternet/scl-socket",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SCLInternet/SclSocket.git",
+                "reference": "07a3316cca9224e10bd834329d7ed71a184f6913"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SCLInternet/SclSocket/zipball/07a3316cca9224e10bd834329d7ed71a184f6913",
+                "reference": "07a3316cca9224e10bd834329d7ed71a184f6913",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.4.0",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SclSocket\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Oram",
+                    "email": "tom@x2k.co.uk",
+                    "homepage": "http://github.com/tomphp"
+                }
+            ],
+            "description": "Basic socket wrapper class to enable the writing of more testable socket code",
+            "homepage": "https://github.com/SCLInternet/SCLSocket",
+            "time": "2013-02-04 22:19:33"
+        },
+        {
+            "name": "sclinternet/scl-whois",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SCLInternet/SclWhois.git",
+                "reference": "813f2906723e86c0d4920babda09d95326166118"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SCLInternet/SclWhois/zipball/813f2906723e86c0d4920babda09d95326166118",
+                "reference": "813f2906723e86c0d4920babda09d95326166118",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "sclinternet/scl-socket": "dev-master"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.4.0",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SclWhois\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Oram",
+                    "email": "tom@x2k.co.uk",
+                    "homepage": "http://github.com/tomphp"
+                }
+            ],
+            "description": "Library for performing whois lookups on domain names",
+            "homepage": "https://github.com/SCLInternet/SclWhois",
+            "time": "2013-02-04 20:32:02"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "sclinternet/scl-whois": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

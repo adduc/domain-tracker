@@ -1,0 +1,4 @@
+syntax: regexp
+^vendor
+syntax: glob
+config/config.toml
