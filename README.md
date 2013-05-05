@@ -8,11 +8,13 @@ This project utilizes [Composer] for dependency management.
 * [sclinternet/scl-whois][] - Whois lookups
 * [jamesmoss/toml][] - Configuration parsing
 * [ircmaxell/password-compat][] - Secure password support
+* [doctrine/inflector][] - Inflection library
+* [swiftmailer/swiftmailer][] - Email library
 
 Goals
 -----
-* Render time consistantly under 10ms
-* Peak usage never exceed 1MB
+* Render time consistantly under 10ms (when using opcode cache)
+* Peak usage never exceed 1MB (when using opcode cache)
 
 Notes
 -----
@@ -26,3 +28,5 @@ Notes
 [sclinternet/scl-whois]: https://github.com/SCLInternet/SclWhois
 [jamesmoss/toml]: https://github.com/jamesmoss/toml
 [ircmaxell/password-compat]: https://github.com/ircmaxell/password_compat
+[doctrine/inflector]: https://github.com/doctrine/inflector
+[swiftmailer/swiftmailer]: https://github.com/swiftmailer/swiftmailer
