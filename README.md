@@ -24,7 +24,7 @@ Notes
 
 <!-- Links -->
 
-[Composer][]: http://getcomposer.org
+[Composer]: http://getcomposer.org
 [sclinternet/scl-whois]: https://github.com/SCLInternet/SclWhois
 [jamesmoss/toml]: https://github.com/jamesmoss/toml
 [ircmaxell/password-compat]: https://github.com/ircmaxell/password_compat
