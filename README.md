@@ -3,7 +3,7 @@ Domain Tracker
 
 Dependencies
 ------------
-This project utilizes [Composer] for dependency management.
+This project utilizes [Composer][] for dependency management.
 
 * [sclinternet/scl-whois][] - Whois lookups
 * [jamesmoss/toml][] - Configuration parsing
