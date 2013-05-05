@@ -1,4 +1,4 @@
 syntax: regexp
 ^vendor
 syntax: glob
-config/config.toml
+config/config.ini
