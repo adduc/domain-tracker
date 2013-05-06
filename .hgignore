@@ -1,4 +1,5 @@
 syntax: regexp
-^vendor
+^app/vendor
+
 syntax: glob
-config/config.ini
+app/config/config.ini

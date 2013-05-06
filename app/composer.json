@@ -10,6 +10,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
+        "ext-pdo": "*",
         "sclinternet/scl-whois": "dev-master",
         "ircmaxell/password-compat": "1.0.3",
         "doctrine/inflector": "v1.0",
