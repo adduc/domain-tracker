@@ -3,3 +3,4 @@ syntax: regexp
 
 syntax: glob
 app/config/config.ini
+*.bak
