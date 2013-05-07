@@ -1,6 +1,7 @@
 syntax: regexp
 ^app/vendor
 
+^logs/.*\.log
 syntax: glob
 app/config/config.ini
 *.bak
