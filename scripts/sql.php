@@ -18,8 +18,8 @@ switch(isset($argv[1]) ? $argv[1] : '') {
         $files = array_filter(array(
             $schema,
             'data.required.sql',
-            $config['dev_sql_sample_data'],
-            $config['dev_sql_private_data']
+            $config['dev_mode'] ? $config['dev_sql_sample_data'] : false,
+            $config['dev_mode'] ?$config['dev_sql_private_data'] : false
         ));
 
         foreach($files as $file) {
