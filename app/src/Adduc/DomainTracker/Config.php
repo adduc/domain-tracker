@@ -15,7 +15,7 @@ class Config implements \ArrayAccess {
         }
 
         $this->file = $file;
-        $this->config = parse_ini_file($file, true);
+        $this->config = parse_ini_file($file);
         $this->writable = is_writable($file);
     }
 

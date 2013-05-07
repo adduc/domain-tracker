@@ -6,23 +6,25 @@
 
 namespace Adduc\DomainTracker;
 
-register_shutdown_function(function() {
+if(php_sapi_name() != 'cli') {
+    register_shutdown_function(function() {
 
-    // Peak Memory Usage
-    $peak = memory_get_peak_usage();
-    $peak = number_format($peak / 1024 / 1024, 3);
+        // Peak Memory Usage
+        $peak = memory_get_peak_usage();
+        $peak = number_format($peak / 1024 / 1024, 3);
 
-    $to_log['peak'] = "Peak Memory: {$peak} MiB";
+        $to_log['peak'] = "Peak Memory: {$peak} MiB";
 
-    // Time to render
-    $render = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
-    $render = number_format($render * 1000, 3);
+        // Time to render
+        $render = microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'];
+        $render = number_format($render * 1000, 3);
 
-    $to_log['render'] = "Render Time: {$render} ms";
+        $to_log['render'] = "Render Time: {$render} ms";
 
-    error_log("[" . implode("] [", $to_log) . "]");
+        error_log("[" . implode("] [", $to_log) . "]");
 
-});
+    });
+}
 
 /*
 set_exception_handler(function(\Exception $e) {
