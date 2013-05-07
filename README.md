@@ -5,7 +5,7 @@ Dependencies
 ------------
 This project utilizes [Composer][] for dependency management.
 
-* [sclinternet/scl-whois][] - Whois lookups
+* [novutec/whoisparser][] - Whois lookups
 * [ircmaxell/password-compat][] - Secure password support
 * [doctrine/inflector][] - Inflection library
 * [swiftmailer/swiftmailer][] - Email library
@@ -24,7 +24,7 @@ Notes
 <!-- Links -->
 
 [Composer]: http://getcomposer.org
-[sclinternet/scl-whois]: https://github.com/SCLInternet/SclWhois
+[novutec/whoisparser]: https://github.com/novutec/WhoisParser
 [ircmaxell/password-compat]: https://github.com/ircmaxell/password_compat
 [doctrine/inflector]: https://github.com/doctrine/inflector
 [swiftmailer/swiftmailer]: https://github.com/swiftmailer/swiftmailer

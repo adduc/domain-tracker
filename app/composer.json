@@ -11,7 +11,8 @@
     "require": {
         "php": ">=5.4.0",
         "ext-pdo": "*",
-        "sclinternet/scl-whois": "dev-master",
+        "novutec/whoisparser": "dev-master",
+        "novutec/domainparser": "dev-master",
         "ircmaxell/password-compat": "1.0.3",
         "doctrine/inflector": "v1.0",
         "swiftmailer/swiftmailer": "v5.0.0"
@@ -20,5 +21,14 @@
         "files": [ "src/bootstrap.php" ],
         "psr-0": { "": "src" }
     },
-    "minimum-stability": "dev"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/novutec/WhoisParser"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/novutec/DomainParser"
+        }
+    ]
 }
