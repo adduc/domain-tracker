@@ -7,7 +7,7 @@ include(dirname(__DIR__) . '/vendor/autoload.php');
 $router = new Router();
 
 // Standard routes
-$router->add(new Route('/', ['method' => 'sample']));
+$router->add(new Route('/', ['method' => 'index']));
 $router->add(new Route('/:class/:method'));
 $router->add(new Route('/:class'));
 
