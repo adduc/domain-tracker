@@ -1,30 +1,20 @@
 <?php
 
-use Doctrine\Common\Inflector\Inflector;
-use Adduc\DomainTracker\Exception;
-use Adduc\DomainTracker\Controller\Controller;
+namespace Adduc\MVC;
 
 include(dirname(__DIR__) . '/vendor/autoload.php');
 
-function get($arr, $val, $fallback) {
-    return array_key_exists($val, $arr) ? $arr[$val] : $fallback;
-}
+$router = new Router();
 
-$ns = "\\Adduc\\DomainTracker\\Controller\\";
+// Standard routes
+$router->add(new Route('/', ['method' => 'sample']));
+$router->add(new Route('/:class/:method'));
+$router->add(new Route('/:class'));
 
-$class = get($_GET, 'controller', 'index');
-$class = Inflector::classify($class);
-$class = "{$ns}{$class}";
+// Error route
+$router->add(new Route('/.*?', ['method' => 'error']), 'error');
 
-$rc = class_exists($class, true) ? new ReflectionClass($class) : false;
-
-if(!class_exists($class, true)) {
-    throw new Exception\ControllerDoesNotExist($class);
-} elseif(!is_subclass_of($class, "{$ns}Controller", true)) {
-    throw new Exception\ControllerDoesNotInherit($class);
-}
-
-$action = get($_GET, 'action', 'index');
-
-$controller = new $class();
-$controller->invoke($action);
+$dispatch = new Dispatch($router);
+$dispatch->controller_namespace = "Adduc\\DomainTracker\\Controller";
+$dispatch->view_path = dirname(__DIR__) . '/templates';
+$dispatch->dispatch();

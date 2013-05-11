@@ -3,8 +3,36 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f295968c1d6dd8007ecc236e97d4b4ca",
+    "hash": "b193017a9b02764d0896eec58c60a298",
     "packages": [
+        {
+            "name": "adduc/keyframe",
+            "version": "dev-master",
+            "source": {
+                "type": "hg",
+                "url": "/home/jlong/Repositories/play/keyframe",
+                "reference": "aec18f26651a"
+            },
+            "require": {
+                "doctrine/inflector": "v1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Adduc": "app/src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "John Long",
+                    "email": "a@88k.us"
+                }
+            ],
+            "time": "2013-05-11 16:18:05"
+        },
         {
             "name": "doctrine/inflector",
             "version": "v1.0",
@@ -230,6 +258,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "adduc/keyframe": 20,
         "novutec/whoisparser": 20,
         "novutec/domainparser": 20
     },

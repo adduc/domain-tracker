@@ -11,6 +11,7 @@
     "require": {
         "php": ">=5.4.0",
         "ext-pdo": "*",
+        "adduc/keyframe": "dev-master",
         "novutec/whoisparser": "dev-master",
         "novutec/domainparser": "dev-master",
         "ircmaxell/password-compat": "1.0.3",
@@ -22,6 +23,10 @@
         "psr-0": { "": "src" }
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "/home/jlong/Repositories/play/keyframe"
+        },
         {
             "type": "vcs",
             "url": "https://github.com/novutec/WhoisParser"
