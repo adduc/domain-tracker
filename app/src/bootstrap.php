@@ -40,4 +40,5 @@ set_exception_handler(function(\Exception $e) {
 $app = App::getInstance(dirname(__DIR__));
 $config = $app->getConfig();
 
+ini_set('memory_limit', $config['dev_mode'] ? '2M' : '16M');
 ini_set('display_errors', $config['dev_mode'] ? 1 : 0);
