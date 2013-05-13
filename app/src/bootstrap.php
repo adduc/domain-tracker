@@ -38,3 +38,6 @@ set_exception_handler(function(\Exception $e) {
 
 /** Initialize app */
 $app = App::getInstance(dirname(__DIR__));
+$config = $app->getConfig();
+
+ini_set('display_errors', $config['dev_mode'] ? 1 : 0);
